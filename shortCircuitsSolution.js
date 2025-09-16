@@ -9,11 +9,11 @@
 */
 
 // AND short-circuit
-let a = true; //set to true
-let b = false; //set to false
+let a = false; //set to true (set to false for desired output)
+let b = true; //set to false (set to true for desired output)
 let c = a && console.log("This will NOT print"); // returns false
 let d = b && console.log("This will print"); // returns undefined
-// note: directions given do not result in result described in comments, may need to edit
+// note: directions given do not result in result described in comments
 
 // OR short-circuit
 let f = true; //set to true
@@ -38,4 +38,5 @@ console.log(d); // undefined (because console.log returns undefined)
 console.log(h); // true
 console.log(i); // undefined
 console.log(v); // hello
+
 console.log(z); // 0
