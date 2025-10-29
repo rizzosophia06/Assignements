@@ -48,8 +48,8 @@ function Point(x, y) {
     This time we'll make print a method of the object, rather than
     part of the prototype.
     */
-    this.x = x;
-    this.y = y;
+    this.x = x || 0;
+    this.y = y || 0;
 
     this.print = function() {
         // Keep same format as above
@@ -66,4 +66,5 @@ p2.print();
 p2 = new Point(10,15); //make with constructor function
 p2.print();
 p2 = new Point(-2, 8); //make with constructor function
+
 p2.print();
